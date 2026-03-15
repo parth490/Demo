@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Hotel">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Hotel</title>
+    <meta name="description" content="Hotel">
+    <meta name="keywords" content="Hotel">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/main-style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header class="site-header">
+        <div class="announcebar">
+            <div class="container">
+                <div class="announce-bar d-flex align-items-center justify-content-between gap-2">
+                    <div class="announce-bar-left d-flex align-items-center">
+                        <a href="tel:+123-4567890" class="d-flex align-items-center gap-2" tabindex="0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path
+                                    d="M20.1404 16.5312C19.396 15.7812 17.5932 14.6867 16.7185 14.2456C15.5795 13.6718 15.4857 13.6249 14.5904 14.2901C13.9932 14.734 13.5962 15.1306 12.8973 14.9815C12.1984 14.8324 10.6796 13.992 9.34978 12.6663C8.01994 11.3407 7.13072 9.77791 6.98119 9.08135C6.83166 8.38478 7.23478 7.99244 7.67447 7.39385C8.29415 6.5501 8.24728 6.40947 7.71759 5.27041C7.30462 4.38447 6.17822 2.59853 5.42541 1.85791C4.62009 1.06244 4.62009 1.20306 4.10119 1.41869C3.67872 1.5964 3.27343 1.81246 2.89041 2.06416C2.14041 2.56244 1.72416 2.97635 1.43306 3.59838C1.14197 4.22041 1.01119 5.67869 2.51447 8.40963C4.01775 11.1406 5.07244 12.537 7.2554 14.7138C9.43837 16.8907 11.117 18.0612 13.5709 19.4374C16.6065 21.1376 17.7709 20.8062 18.3948 20.5156C19.0187 20.2249 19.4345 19.8124 19.9337 19.0624C20.186 18.6801 20.4026 18.2752 20.5806 17.8531C20.7967 17.336 20.9373 17.336 20.1404 16.5312Z"
+                                    stroke="white" stroke-miterlimit="10" />
+                            </svg>
+                            123-4567890
+                        </a>
+                        <a href="mailto:admin@hotels.com" class="d-flex align-items-center gap-2" tabindex="0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"
+                                fill="none">
+                                <path
+                                    d="M16.25 1.25H3.75C2.09315 1.25 0.75 2.59315 0.75 4.25V13.75C0.75 15.4069 2.09315 16.75 3.75 16.75H16.25C17.9069 16.75 19.25 15.4069 19.25 13.75V4.25C19.25 2.59315 17.9069 1.25 16.25 1.25Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M0.75 5L9.165 8.866C9.42692 8.98634 9.71176 9.04865 10 9.04865C10.2882 9.04865 10.5731 8.98634 10.835 8.866L19.25 5"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            admin@hotels.com
+                        </a>
+                    </div>
+                    <div class="announce-bar-right d-flex align-items-center gap-2">
+                        <div class="nice-select list" tabindex="0">
+                            <span class="current d-flex align-items-center justify-content-between">
+                                <div class="card-dtl d-flex align-items-center gap-2">
+                                    <img src="./assets/images/eng.png" alt="payment-image" loading="lazy">
+                                    English
+                                </div>
+                            </span>
+                            <ul class="list">
+                                <li class="option d-flex align-items-center justify-content-between">
+                                    <div class="card-dtl d-flex align-items-center gap-2">
+                                        <img src="./assets/images/ind.png" alt="payment-image" loading="lazy">
+                                        Hindi
+                                    </div>
+                                </li>
+                                <li class="option d-flex align-items-center justify-content-between">
+                                    <div class="card-dtl d-flex align-items-center gap-2">
+                                        <img src="./assets/images/uk.png" alt="payment-image" loading="lazy">
+                                        French
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profile d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M4.271 18.346C4.271 18.346 6.5 15.5 12 15.5C17.5 15.5 19.73 18.346 19.73 18.346M12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2043 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9C9 9.79565 9.31607 10.5587 9.87868 11.1213C10.4413 11.6839 11.2043 12 12 12Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Account</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-navigationbar sticky_header" id="header-sticky">
+            <div class="container">
+                <div class="navigationbar-row d-flex align-items-center">
+                    <div class="logo-col">
+                        <h1>
+                            <a href="index.html" tabindex="0">
+                                <img src="assets/images/logo.png" alt="logo" loading="lazy">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="menu-item-right d-flex align-items-center justify-content-end">
+                        <ul class="main-nav menu-items-col d-flex align-items-center">
+                            <li class="menu-lnk mobile-item">
+                                <a href="index.html" tabindex="0">Home</a>
+                            </li>
+                            <li class="menu-lnk mobile-item">
+                                <a href="rooms-suites.html" tabindex="0">Rooms & Suites</a>
+                            </li>
+                            <li class="menu-lnk mobile-item">
+                                <a href="gallery.html" tabindex="0">Gallery</a>
+                            </li>
+                            <li class="menu-lnk mobile-item">
+                                <a href="restaurant.html" tabindex="0">Restaurant</a>
+                            </li>
+                            <li class="menu-lnk mobile-item">
+                                <a href="about.html" tabindex="0">About Us</a>
+                            </li>
+                            <li class="menu-lnk has-item">
+                                <a href="javascript:;" tabindex="0">Facilities</a>
+                                <div class="mega-menu menu-dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="fitness-gym.html" tabindex="0">Fitness & Gym</a>
+                                        </li>
+                                        <li>
+                                            <a href="event-meeting.html" tabindex="0"> Event & Meeting</a>
+                                        </li>
+                                        <li>
+                                            <a href="activity.html" tabindex="0"> Activities</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-lnk has-item">
+                                <a href="javascript:;" tabindex="0">Pages</a>
+                                <div class="mega-menu menu-dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="booking.html" tabindex="0">Booking</a>
+                                        </li>
+                                        <li>
+                                            <a href="faq.html" tabindex="0">Faq</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html" tabindex="0">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="booking.html" class="btn" tabindex="0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path
+                                    d="M1 10.9038C1 7.13281 1 5.24681 2.172 4.07581C3.344 2.90481 5.229 2.90381 9 2.90381H13C16.771 2.90381 18.657 2.90381 19.828 4.07581C20.999 5.24781 21 7.13281 21 10.9038V12.9038C21 16.6748 21 18.5608 19.828 19.7318C18.656 20.9028 16.771 20.9038 13 20.9038H9C5.229 20.9038 3.343 20.9038 2.172 19.7318C1.001 18.5598 1 16.6748 1 12.9038V10.9038Z"
+                                    stroke="white" stroke-width="1.5" />
+                                <path d="M6 2.90381V1.40381M16 2.90381V1.40381M1.5 7.90381H20.5" stroke="white"
+                                    stroke-width="1.5" stroke-linecap="round" />
+                                <path
+                                    d="M17 15.9038C17 16.169 16.8946 16.4234 16.7071 16.6109C16.5196 16.7985 16.2652 16.9038 16 16.9038C15.7348 16.9038 15.4804 16.7985 15.2929 16.6109C15.1054 16.4234 15 16.169 15 15.9038C15 15.6386 15.1054 15.3842 15.2929 15.1967C15.4804 15.0092 15.7348 14.9038 16 14.9038C16.2652 14.9038 16.5196 15.0092 16.7071 15.1967C16.8946 15.3842 17 15.6386 17 15.9038ZM17 11.9038C17 12.169 16.8946 12.4234 16.7071 12.6109C16.5196 12.7985 16.2652 12.9038 16 12.9038C15.7348 12.9038 15.4804 12.7985 15.2929 12.6109C15.1054 12.4234 15 12.169 15 11.9038C15 11.6386 15.1054 11.3842 15.2929 11.1967C15.4804 11.0092 15.7348 10.9038 16 10.9038C16.2652 10.9038 16.5196 11.0092 16.7071 11.1967C16.8946 11.3842 17 11.6386 17 11.9038ZM12 15.9038C12 16.169 11.8946 16.4234 11.7071 16.6109C11.5196 16.7985 11.2652 16.9038 11 16.9038C10.7348 16.9038 10.4804 16.7985 10.2929 16.6109C10.1054 16.4234 10 16.169 10 15.9038C10 15.6386 10.1054 15.3842 10.2929 15.1967C10.4804 15.0092 10.7348 14.9038 11 14.9038C11.2652 14.9038 11.5196 15.0092 11.7071 15.1967C11.8946 15.3842 12 15.6386 12 15.9038ZM12 11.9038C12 12.169 11.8946 12.4234 11.7071 12.6109C11.5196 12.7985 11.2652 12.9038 11 12.9038C10.7348 12.9038 10.4804 12.7985 10.2929 12.6109C10.1054 12.4234 10 12.169 10 11.9038C10 11.6386 10.1054 11.3842 10.2929 11.1967C10.4804 11.0092 10.7348 10.9038 11 10.9038C11.2652 10.9038 11.5196 11.0092 11.7071 11.1967C11.8946 11.3842 12 11.6386 12 11.9038ZM7 15.9038C7 16.169 6.89464 16.4234 6.70711 16.6109C6.51957 16.7985 6.26522 16.9038 6 16.9038C5.73478 16.9038 5.48043 16.7985 5.29289 16.6109C5.10536 16.4234 5 16.169 5 15.9038C5 15.6386 5.10536 15.3842 5.29289 15.1967C5.48043 15.0092 5.73478 14.9038 6 14.9038C6.26522 14.9038 6.51957 15.0092 6.70711 15.1967C6.89464 15.3842 7 15.6386 7 15.9038ZM7 11.9038C7 12.169 6.89464 12.4234 6.70711 12.6109C6.51957 12.7985 6.26522 12.9038 6 12.9038C5.73478 12.9038 5.48043 12.7985 5.29289 12.6109C5.10536 12.4234 5 12.169 5 11.9038C5 11.6386 5.10536 11.3842 5.29289 11.1967C5.48043 11.0092 5.73478 10.9038 6 10.9038C6.26522 10.9038 6.51957 11.0092 6.70711 11.1967C6.89464 11.3842 7 11.6386 7 11.9038Z"
+                                    fill="white" />
+                            </svg>
+                            <span> Book Online </span>
+                        </a>
+                        <div class="mobile-menu mobile-only">
+                            <button class="mobile-menu-button">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner-section">
+            <div class="container">
+                <div class="banner-content">
+                    <h1 class="mb-4">ENJOY A LUXURY<br class="d-none d-md-block"/> EXPERIENCE</h1>
+                </div>
+            </div>
+        </section> 
+        <section class="banner-slider-section position-relative">
+            <div class="swiper bannerSwiper">
+                <div class="swiper-wrapper">        
+        
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="./assets/images/banner-bg.png" class="banner-img" alt="Luxury Experience">
+                        <div class="banner-slider-content">
+                            <div class="container">
+                                <h1>ENJOY A LUXURY<br class="d-none d-md-block"> EXPERIENCE</h1>
+                            </div>
+                        </div>
+                    </div>        
+        
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="./assets/images/banner-bg.png" class="banner-img" alt="Luxury Hotel">
+                        <div class="banner-slider-content">
+                            <div class="container">
+                                <h1>RELAX IN<br class="d-none d-md-block"> COMFORT</h1>
+                            </div>
+                        </div>
+                    </div>        
+        
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="./assets/images/banner-bg.png" class="banner-img" alt="Luxury Stay">
+                        <div class="banner-slider-content">
+                            <div class="container">
+                                <h1>YOUR PERFECT<br class="d-none d-md-block"> HOLIDAY</h1>
+                            </div>
+                        </div>
+                    </div>        
+        
+                </div>        
+        
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+        
+                <!-- Navigation -->
+                <div class="swiper-button-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+                      </svg>
+                </div>
+                <div class="swiper-button-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+                      </svg>
+                </div>
+        
+            </div>
+        </section>
+    </main>
+    <!-- mobile-menu start here -->
+    <div class="mobile-menu-wrapper">
+        <div class="menu-close-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                <path fill="#24272a"
+                    d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                </path>
+            </svg>
+        </div>
+        <div class="mobile-menu-bar">
+            <ul>
+                <li class="mobile-item">
+                    <a href="index.html" tabindex="0">home</a>
+                </li>
+                <li class="mobile-item">
+                    <a href="rooms-suites.html" tabindex="0">Rooms & Suites</a>
+                </li>
+                <li class="mobile-item">
+                    <a href="gallery.html" tabindex="0">Gallery</a>
+                </li>
+                <li class="mobile-item">
+                    <a href="restaurant.html" tabindex="0">Restaurant</a>
+                </li>
+                <li class="mobile-item">
+                    <a href="about.html" tabindex="0">About Us</a>
+                </li>
+                <li class="mobile-item has-children">
+                    <a href="javascript:void;" tabindex="0" class="acnav-label">
+                        Facilities
+                        <svg class="menu-open-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="11"
+                            viewBox="0 0 20 11">
+                            <path fill="#24272a"
+                                d="M.268 1.076C.373.918.478.813.584.76l.21.474c.79.684 2.527 2.158 5.21 4.368 2.738 2.21 4.159 3.316 4.264 3.316.474-.053 1.158-.369 1.947-1.053.842-.631 1.632-1.42 2.474-2.368.895-.948 1.737-1.842 2.632-2.58.842-.789 1.578-1.262 2.105-1.42l.316.684c0 .21-.106.474-.316.737-.053.21-.263.421-.474.579-.053.052-.316.21-.737.474l-.526.368c-.421.263-1.105.947-2.158 2l-1.105 1.053-2.053 1.947c-1 .947-1.579 1.421-1.842 1.421-.263 0-.684-.263-1.158-.895-.526-.631-.842-1-1.052-1.105l-.737-.579c-.316-.316-.527-.474-.632-.474l-5.42-4.315L.267 2.339l-.105-.421-.053-.369c0-.157.053-.315.158-.473z">
+                            </path>
+                        </svg>
+                        <svg class="close-menu-ioc" xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                            viewBox="0 0 20 18">
+                            <path fill="#24272a"
+                                d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                            </path>
+                        </svg>
+                    </a>
+                    <ul class="mobile-menu-inner acnav-list">
+                        <li>
+                            <a href="fitness-gym.html" tabindex="0">Fitness & Gym</a>
+                        </li>
+                        <li>
+                            <a href="event-meeting.html" tabindex="0"> Event & Meeting</a>
+                        </li>
+                        <li>
+                            <a href="activity.html" tabindex="0"> Activities</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-item has-children">
+                    <a href="javascript:void;" tabindex="0" class="acnav-label">
+                        Pages
+                        <svg class="menu-open-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="11"
+                            viewBox="0 0 20 11">
+                            <path fill="#24272a"
+                                d="M.268 1.076C.373.918.478.813.584.76l.21.474c.79.684 2.527 2.158 5.21 4.368 2.738 2.21 4.159 3.316 4.264 3.316.474-.053 1.158-.369 1.947-1.053.842-.631 1.632-1.42 2.474-2.368.895-.948 1.737-1.842 2.632-2.58.842-.789 1.578-1.262 2.105-1.42l.316.684c0 .21-.106.474-.316.737-.053.21-.263.421-.474.579-.053.052-.316.21-.737.474l-.526.368c-.421.263-1.105.947-2.158 2l-1.105 1.053-2.053 1.947c-1 .947-1.579 1.421-1.842 1.421-.263 0-.684-.263-1.158-.895-.526-.631-.842-1-1.052-1.105l-.737-.579c-.316-.316-.527-.474-.632-.474l-5.42-4.315L.267 2.339l-.105-.421-.053-.369c0-.157.053-.315.158-.473z">
+                            </path>
+                        </svg>
+                        <svg class="close-menu-ioc" xmlns="http://www.w3.org/2000/svg" width="20" height="18"
+                            viewBox="0 0 20 18">
+                            <path fill="#24272a"
+                                d="M19.95 16.75l-.05-.4-1.2-1-5.2-4.2c-.1-.05-.3-.2-.6-.5l-.7-.55c-.15-.1-.5-.45-1-1.1l-.1-.1c.2-.15.4-.35.6-.55l1.95-1.85 1.1-1c1-1 1.7-1.65 2.1-1.9l.5-.35c.4-.25.65-.45.75-.45.2-.15.45-.35.65-.6s.3-.5.3-.7l-.3-.65c-.55.2-1.2.65-2.05 1.35-.85.75-1.65 1.55-2.5 2.5-.8.9-1.6 1.65-2.4 2.3-.8.65-1.4.95-1.9 1-.15 0-1.5-1.05-4.1-3.2C3.1 2.6 1.45 1.2.7.55L.45.1c-.1.05-.2.15-.3.3C.05.55 0 .7 0 .85l.05.35.05.4 1.2 1 5.2 4.15c.1.05.3.2.6.5l.7.6c.15.1.5.45 1 1.1l.1.1c-.2.15-.4.35-.6.55l-1.95 1.85-1.1 1c-1 1-1.7 1.65-2.1 1.9l-.5.35c-.4.25-.65.45-.75.45-.25.15-.45.35-.65.6-.15.3-.25.55-.25.75l.3.65c.55-.2 1.2-.65 2.05-1.35.85-.75 1.65-1.55 2.5-2.5.8-.9 1.6-1.65 2.4-2.3.8-.65 1.4-.95 1.9-1 .15 0 1.5 1.05 4.1 3.2 2.6 2.15 4.3 3.55 5.05 4.2l.2.45c.1-.05.2-.15.3-.3.1-.15.15-.3.15-.45z">
+                            </path>
+                        </svg>
+                    </a>
+                    <ul class="mobile-menu-inner acnav-list">
+                        <li>
+                            <a href="booking.html" tabindex="0">Booking</a>
+                        </li>
+                        <li>
+                            <a href="faq.html" tabindex="0">Faq</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" tabindex="0">Contact</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
